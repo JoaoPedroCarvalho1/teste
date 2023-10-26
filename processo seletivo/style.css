@@ -1,0 +1,267 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+li {
+    flex-wrap: wrap;
+    margin: 1vw;
+    transition: 0.5s;
+    padding: 5px;
+    border-bottom: solid;
+    border-color: #33333300;
+    transition: 0.3s;
+}
+
+li:hover {
+    color: rgb(2, 0, 133);
+    border-color: rgb(2, 0, 133);
+}
+
+.contact_bar {
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.top-bar {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: rgb(2, 0, 133);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 21% 5px 2%;
+
+}
+
+nav {
+    width: 100%;
+    height: 95px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    color: #fffeff;
+    justify-content: space-evenly;
+}
+
+nav li {
+    display: inline-block;
+    color: gray;
+}
+
+nav li a {
+    display: inline-block;
+    color: gray;
+    text-decoration: none;
+    padding: 15px;
+}
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    padding-top:5px ;
+    padding-left: 0;
+    z-index: 1;
+}
+.dropdown-menu {
+    background-color: rgb(2, 0, 133);
+    color: gray;
+    display: none;
+}
+
+.dropdown-menu a {
+    display: block;
+    color: white;
+}
+.dropdown:hover .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.dropside{
+    display: flex;
+    flex-direction: column;
+}
+.dropside ul{
+    display: block;
+    padding: 0px;
+}
+.side{
+    display:none;
+}
+.dropside:hover .side{
+    background-color: rgb(2, 0, 133);
+    position: absolute;
+    display: block;
+    margin-left: 100px;
+}
+#image_Logo {
+    background-image: url(./imagens/img1.jpg);
+    height: 55px;
+    width: 140px;
+    margin-top: 1%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+
+#container_slider {
+    position: relative;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(209, 209, 209);
+
+}
+
+#slider {
+    height: 290px;
+    width: 894px;
+}
+
+#container {
+    height: 300px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    justify-content: space-evenly;
+}
+
+#text_container {
+    color: rgb(0, 0, 0);
+    text-align: left;
+    font-size: large;
+    width: 250px;
+}
+
+#image_container {
+    background-image: url(./imagens/img2.jpg);
+    height: 212px;
+    width: 325px;
+    background-size: cover;
+    margin-right: 15px;
+}
+
+#destaques {
+    color: gray;
+    margin: 0px 0px 0px 20vw;
+}
+
+#boxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box {
+    height: 163px;
+    width: 196px;
+    margin: 20px;
+}
+
+.a_box {
+    color: #333;
+    display: flex;
+    justify-content: center;
+}
+
+#box1 {
+    background-image: url(./imagens/img4.jpg);
+    background-size: cover;
+}
+
+#box2 {
+    background-image: url(./imagens/img5.jpg);
+    background-size: cover;
+}
+
+#box3 {
+    background-image: url(./imagens/img4.jpg);
+    background-size: cover;
+}
+
+#box4 {
+    background-image: url(./imagens/img5.jpg);
+    background-size: cover;
+}
+
+#footer {
+    background-color: #333;
+    height: 100px;
+}
+
+#footer_menu {
+    justify-content: center;
+}
+
+.li_footer:hover {
+    color: white;
+    border-color: white;
+}
+
+@media screen and (max-width: 640px) {
+    ul {
+        justify-content: center;
+        flex-direction: column;
+        padding: 0px;
+    }
+    nav {
+        height: auto;
+        flex-direction: column;
+        align-items:center ;
+        justify-content: center;
+    }
+    #image_Logo {
+        background-image: url(./imagens/img1.jpg);
+        height: 55px;
+        width: 140px;
+        margin-top: 1%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #container_slider {
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    #slider {
+        height: 290px;
+        width: 100%;
+    }
+
+    #image_container {
+        margin: 0px;
+    }
+
+    #destaques {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    #container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+    }
+}
